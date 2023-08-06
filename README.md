@@ -26,6 +26,6 @@ This project focuses on employing various binary classification techniques to pr
 ### Result
 The best-performing model achieved an accuracy of 79% and an AUC of 0.8484 _(as shown in the graph below)_
 
-<center>
+<p style="text-align:center;"> 
 <img width="416" alt="Screenshot 2023-08-06 at 3 22 44 PM" src="https://github.com/amruthak03/Project-699/assets/110037114/c3dcfa98-1a3f-451b-a66d-89efdc1ab078">
-</center>
+</p>
