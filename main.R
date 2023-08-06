@@ -9,7 +9,7 @@ library(pROC)
 #library(ROCR)
 library(glmnet)
 
-data = read.csv('/Users/amrutha/Documents/Amrutha_Imp/BU-Spring23/CS699/project/colleges_usnews.csv')
+data = read.csv('colleges_usnews.csv')
 
 head(data)
 
@@ -72,16 +72,13 @@ maj <- combined_dataset[combined_dataset$binaryClass == 'N',]
 set.seed(0)
 balanced <- rbind(min, maj[sample(1:nrow(maj), nrow(min)),])
 
-write.csv(balanced, "/Users/amrutha/Documents/Amrutha_Imp/BU-Spring23/CS699/project/preProcessed.csv", row.names = FALSE)
+# write.csv(balanced, "preProcessed.csv", row.names = FALSE)
 
 #Splitting the dataset into train and test sets
 set.seed(0)
 split <- initial_split(balanced, prop = 0.66, strata = binaryClass)
 train <- training(split)
 test <- testing(split)
-
-write.csv(train, "/Users/amrutha/Documents/Amrutha_Imp/BU-Spring23/CS699/project/train.csv", row.names = FALSE)
-write.csv(test, "/Users/amrutha/Documents/Amrutha_Imp/BU-Spring23/CS699/project/test.csv", row.names = FALSE)
 
 #Applying PCA on the training dataset
 pc <- prcomp(train[, -35], center = TRUE, scale = TRUE) # exclude class attribute
