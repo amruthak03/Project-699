@@ -20,8 +20,8 @@ This project focuses on employing various binary classification techniques to pr
    c. Random Forest classifier
    d. XGBoost classifier
    e. Lasso Regression
-3. Developed 5 different classification models, which are J48 Decision Tree, Naive Bayes classifier, Logistic Regression, Support Vector MAchine (SVM), and Neural Network, for each chosen set of attributes. 10-fold cross-validation was used while training the classification models.
-4. Compared each of the 25 models built and trained based on their accuracies. Since we have a balanced dataset, accuracy was a good measure for the performance comparison of each model. The best combination of feature selection method and classification model was selected. The best performing classification model was then implemented on the original dataset without feature selection and the performances of the two models were compared. 
+3. Developed 5 different classification models, which are J48 Decision Tree, Naive Bayes classifier, Logistic Regression, Support Vector Machine (SVM), and Neural Network, for each chosen set of attributes. 10-fold cross-validation was used while training the classification models.
+4. Compared each of the 25 models built and trained based on their accuracies. Since we have a balanced dataset, accuracy was a good measure for the performance comparison of each model. The best combination of feature selection method and classification model was selected. The best-performing classification model was then implemented on the original dataset without feature selection and the performances of the two models were compared. 
 
 ### Result
 The best-performing model achieved an accuracy of 79% and an AUC of 0.8484 _(as shown in the graph below)_
