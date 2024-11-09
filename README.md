@@ -1,6 +1,6 @@
-# Binary Classification Techniques to Identify High or Low Graduation Rates in US Colleges
+# A Comparative Study of Attribute Selection Methods and Classifiers 
 ## Project Overview
-This project focuses on employing various binary classification techniques to predict whether a US college has a high or low graduation rate. The project was completed as part of the Data Mining course at Boston University.
+This project aims to utilize different binary classification techniques to identify the most effective model for predicting whether a U.S. college has a high or low graduation rate. It was completed as part of the Data Mining course at Boston University.
 
 ## Data Mining Tools Used
 1. R Programming
